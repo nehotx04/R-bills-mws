@@ -17,8 +17,7 @@ return new class extends Migration
             $table->string('lastname',50)->nullable(false);
             $table->string('dni',255)->nullable(false);
             $table->string('ubication',255)->nullable(false);
-            $table->int('enterprise_id');
-            $table->string('slug',500);
+            $table->integer('subsidiary_id');
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('iva');
             $table->integer('total');
             $table->string('date',500);
-            $table->string('slug',500);
+            $table->integer('subsidiary_id')->nullable(false);
             $table->timestamps();
         });
     }

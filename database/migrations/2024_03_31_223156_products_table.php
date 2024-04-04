@@ -18,7 +18,6 @@ return new class extends Migration
             $table->integer('price')->nullable(false);
             $table->string('sku',500)->nullable(true);
             $table->integer('subsidiary_id')->nullable(false);
-            $table->string('slug',500);
             $table->timestamps();
         });
     }
